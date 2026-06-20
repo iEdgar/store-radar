@@ -13,27 +13,33 @@ const columns: CsvColumn<Row>[] = [
 ];
 
 describe("toCsv", () => {
-  it("builds a header row followed by data rows", () => {
+  it("builds a header row followed by data rows (semicolon-delimited)", () => {
     expect(toCsv(columns, [{ name: "Mouse", value: 10 }])).toBe(
-      "Name,Value\r\nMouse,10",
+      "Name;Value\r\nMouse;10",
     );
   });
 
-  it("quotes and escapes fields with commas, quotes or line breaks", () => {
-    expect(toCsv(columns, [{ name: 'A, "B"', value: 1 }])).toBe(
-      'Name,Value\r\n"A, ""B""",1',
+  it("quotes fields that contain the delimiter", () => {
+    expect(toCsv(columns, [{ name: "A;B", value: 1 }])).toBe(
+      'Name;Value\r\n"A;B";1',
+    );
+  });
+
+  it("quotes and escapes fields with quotes or line breaks", () => {
+    expect(toCsv(columns, [{ name: 'A "B"', value: 1 }])).toBe(
+      'Name;Value\r\n"A ""B""";1',
     );
   });
 
   it("guards string cells against formula injection", () => {
     expect(toCsv(columns, [{ name: "=SUM(A1)", value: 1 }])).toBe(
-      "Name,Value\r\n'=SUM(A1),1",
+      "Name;Value\r\n'=SUM(A1);1",
     );
   });
 
   it("does not alter numeric cells", () => {
     expect(toCsv(columns, [{ name: "Item", value: -5 }])).toBe(
-      "Name,Value\r\nItem,-5",
+      "Name;Value\r\nItem;-5",
     );
   });
 });
