@@ -109,6 +109,10 @@ describe("getOverview", () => {
     expect(overview.totalProductsSold).toBe(35);
     expect(overview.storeCount).toBe(2);
     expect(overview.categoriesCount).toBe(2);
+    expect(overview.revenueByRegion).toEqual([
+      { region: "East", totalRevenue: 350 },
+      { region: "West", totalRevenue: 200 },
+    ]);
   });
 });
 

@@ -578,3 +578,23 @@ Claude must:
 * Follow all project documentation.
 
 If a phase depends on a previous one that is incomplete, stop and explain why before continuing.
+
+---
+
+# Post-Delivery Iterations
+
+> Everything below is **beyond the original v1 scope** (checkpoint tag `v1.0.0`). Built on a feature branch so `main`/production stays at the original scope until reviewed and merged.
+
+## Iteration 1 — Data Visualization (charts)
+
+**Status:** ✅ Implemented — 2026-06-20 · branch `feat/charts-revenue-by-region`
+
+Adds a **Revenue by region** bar chart to the dashboard.
+
+* The PRD listed "advanced charts" as out of v1 scope, so this is a deliberate post-delivery enhancement.
+* **Server-side metric:** `getOverview()` now also returns `revenueByRegion` (revenue aggregated per region, sorted desc); `OverviewSchema` extended and validated on the client. Sanity-checked: the region revenues sum to `totalRevenue` (1,491,571).
+* **Charting:** `recharts` (the library shadcn's chart component is built on) used directly in a `RevenueByRegionChart` feature component — theme-token colors, currency-formatted tooltip and axis. The shadcn `chart` wrapper was skipped to avoid overwriting the existing `card` component.
+* **Accessibility:** the chart is wrapped in `<figure role="img">` with an `aria-label` and an `sr-only` textual summary, so the data is not conveyed by the chart alone.
+* **Composition:** rendered between the KPI cards and the Stores section; a skeleton shows while the overview loads, and the section is hidden if the overview errors (the KPI area already surfaces the error + retry).
+* **Testing:** the `getOverview` aggregation is covered in `store.service.test.ts`; the Recharts render is not unit-tested (jsdom flakiness — consistent with the project's no-flaky-UI policy).
+* Verification: `type-check`, `lint` (0 warnings), `test` (41) and `build` green; `/api/overview` smoke confirms `revenueByRegion`.

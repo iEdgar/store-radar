@@ -10,8 +10,11 @@ import { PageHeader } from "@/components/shared/page-header";
 import { SectionTitle } from "@/components/shared/section-title";
 import { TableSkeleton } from "@/components/shared/table-skeleton";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
 import { DashboardFilters } from "@/features/dashboard/components/dashboard-filters";
 import { DashboardStats } from "@/features/dashboard/components/dashboard-stats";
+import { RevenueByRegionChart } from "@/features/dashboard/components/revenue-by-region-chart";
 import { useDashboard } from "@/features/dashboard/hooks/use-dashboard";
 import { StoreTable } from "@/features/stores/components/store-table";
 import { cn } from "@/lib/utils";
@@ -98,6 +101,21 @@ export function DashboardView() {
         isError={overview.isError}
         onRetry={() => overview.refetch()}
       />
+
+      {!overview.isError ? (
+        <section aria-labelledby="revenue-region-section" className="space-y-4">
+          <SectionTitle id="revenue-region-section" title="Revenue by region" />
+          {overview.isLoading || !overview.data ? (
+            <Skeleton className="h-72 w-full rounded-xl" />
+          ) : (
+            <Card>
+              <CardContent>
+                <RevenueByRegionChart data={overview.data.revenueByRegion} />
+              </CardContent>
+            </Card>
+          )}
+        </section>
+      ) : null}
 
       <section aria-labelledby="stores-section" className="space-y-4">
         <SectionTitle id="stores-section" title="Stores" />
