@@ -39,6 +39,18 @@ export const OverviewSchema = z.object({
   totalProductsSold: z.number(),
   storeCount: z.number(),
   categoriesCount: z.number(),
+  revenueByRegion: z.array(
+    z.object({
+      region: z.string(),
+      totalRevenue: z.number(),
+    }),
+  ),
+  revenueByCategory: z.array(
+    z.object({
+      category: z.string(),
+      totalRevenue: z.number(),
+    }),
+  ),
 });
 
 export const ApiMetaSchema = z.object({

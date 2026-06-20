@@ -179,10 +179,53 @@ export async function getOverview(): Promise<Overview> {
   const categoriesCount = new Set(products.map((product) => product.category))
     .size;
 
+  const regionByStore = new Map(
+    stores.map((store) => [store.id, store.region]),
+  );
+  const revenueByRegionMap = new Map<string, number>();
+  for (const sale of sales) {
+    const region = regionByStore.get(sale.storeId);
+    if (!region) {
+      continue;
+    }
+    revenueByRegionMap.set(
+      region,
+      (revenueByRegionMap.get(region) ?? 0) + sale.totalRevenue,
+    );
+  }
+  const revenueByRegion = Array.from(
+    revenueByRegionMap,
+    ([region, regionRevenue]) => ({ region, totalRevenue: regionRevenue }),
+  ).sort((a, b) => b.totalRevenue - a.totalRevenue);
+
+  const categoryByProduct = new Map(
+    products.map((product) => [product.id, product.category]),
+  );
+  const revenueByCategoryMap = new Map<string, number>();
+  for (const sale of sales) {
+    const category = categoryByProduct.get(sale.productId);
+    if (!category) {
+      continue;
+    }
+    revenueByCategoryMap.set(
+      category,
+      (revenueByCategoryMap.get(category) ?? 0) + sale.totalRevenue,
+    );
+  }
+  const revenueByCategory = Array.from(
+    revenueByCategoryMap,
+    ([category, categoryRevenue]) => ({
+      category,
+      totalRevenue: categoryRevenue,
+    }),
+  ).sort((a, b) => b.totalRevenue - a.totalRevenue);
+
   return {
     totalRevenue,
     totalProductsSold,
     storeCount: stores.length,
     categoriesCount,
+    revenueByRegion,
+    revenueByCategory,
   };
 }
