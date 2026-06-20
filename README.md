@@ -264,15 +264,15 @@ Complete project documentation is available in the `docs/` directory.
 
 ### Dashboard
 
-> _(Coming soon)_
+![Dashboard — KPIs, filters and stores table](docs/screenshots/dashboard.png)
 
 ### Store Detail
 
-> _(Coming soon)_
+![Store detail — sales summary, top 5 products and products table](docs/screenshots/store-detail.png)
 
 ### Mobile View
 
-> _(Coming soon)_
+![Mobile view — responsive single-column layout](docs/screenshots/mobile.jpeg)
 
 ---
 
