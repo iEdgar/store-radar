@@ -19,7 +19,7 @@ This project was designed as a production-quality frontend application that demo
 - ⚡ Mock REST API using Next.js Route Handlers
 - 📱 Fully responsive
 - ♿ Accessible UI
-- 🌙 Dark mode ready
+- 🌙 Dark UI by default
 
 ---
 
@@ -36,6 +36,7 @@ This project was designed as a production-quality frontend application that demo
 | TanStack Table | Data tables |
 | Zod | Validation |
 | Lucide React | Icons |
+| Vitest + RTL | Testing |
 
 ---
 
@@ -122,6 +123,10 @@ GET /api/stores
 GET /api/stores/:id
 
 GET /api/products
+
+GET /api/regions
+
+GET /api/overview
 ```
 
 All responses are validated using Zod before being consumed by the application.
@@ -284,5 +289,7 @@ Complete project documentation is available in the `docs/` directory.
 ---
 
 ## 👨‍💻 Author
+
+**Edgar Reyes** — [@iEdgar](https://github.com/iEdgar)
 
 Developed as a professional frontend engineering project focused on scalable architecture and modern development practices.
