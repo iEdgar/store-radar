@@ -198,11 +198,34 @@ export async function getOverview(): Promise<Overview> {
     ([region, regionRevenue]) => ({ region, totalRevenue: regionRevenue }),
   ).sort((a, b) => b.totalRevenue - a.totalRevenue);
 
+  const categoryByProduct = new Map(
+    products.map((product) => [product.id, product.category]),
+  );
+  const revenueByCategoryMap = new Map<string, number>();
+  for (const sale of sales) {
+    const category = categoryByProduct.get(sale.productId);
+    if (!category) {
+      continue;
+    }
+    revenueByCategoryMap.set(
+      category,
+      (revenueByCategoryMap.get(category) ?? 0) + sale.totalRevenue,
+    );
+  }
+  const revenueByCategory = Array.from(
+    revenueByCategoryMap,
+    ([category, categoryRevenue]) => ({
+      category,
+      totalRevenue: categoryRevenue,
+    }),
+  ).sort((a, b) => b.totalRevenue - a.totalRevenue);
+
   return {
     totalRevenue,
     totalProductsSold,
     storeCount: stores.length,
     categoriesCount,
     revenueByRegion,
+    revenueByCategory,
   };
 }

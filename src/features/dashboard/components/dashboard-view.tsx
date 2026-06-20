@@ -10,10 +10,11 @@ import { PageHeader } from "@/components/shared/page-header";
 import { SectionTitle } from "@/components/shared/section-title";
 import { TableSkeleton } from "@/components/shared/table-skeleton";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { DashboardFilters } from "@/features/dashboard/components/dashboard-filters";
 import { DashboardStats } from "@/features/dashboard/components/dashboard-stats";
+import { RevenueByCategoryChart } from "@/features/dashboard/components/revenue-by-category-chart";
 import { RevenueByRegionChart } from "@/features/dashboard/components/revenue-by-region-chart";
 import { useDashboard } from "@/features/dashboard/hooks/use-dashboard";
 import { StoreTable } from "@/features/stores/components/store-table";
@@ -103,16 +104,34 @@ export function DashboardView() {
       />
 
       {!overview.isError ? (
-        <section aria-labelledby="revenue-region-section" className="space-y-4">
-          <SectionTitle id="revenue-region-section" title="Revenue by region" />
+        <section aria-labelledby="analytics-section" className="space-y-4">
+          <SectionTitle id="analytics-section" title="Analytics" />
           {overview.isLoading || !overview.data ? (
-            <Skeleton className="h-72 w-full rounded-xl" />
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+              <Skeleton className="h-72 w-full rounded-xl" />
+              <Skeleton className="h-72 w-full rounded-xl" />
+            </div>
           ) : (
-            <Card>
-              <CardContent>
-                <RevenueByRegionChart data={overview.data.revenueByRegion} />
-              </CardContent>
-            </Card>
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Revenue by region</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <RevenueByRegionChart data={overview.data.revenueByRegion} />
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Revenue by category</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <RevenueByCategoryChart
+                    data={overview.data.revenueByCategory}
+                  />
+                </CardContent>
+              </Card>
+            </div>
           )}
         </section>
       ) : null}

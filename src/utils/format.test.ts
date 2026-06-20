@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { formatCurrency, formatNumber } from "@/utils/format";
+import { formatCurrency, formatNumber, formatPercent } from "@/utils/format";
 
 describe("formatCurrency", () => {
   it("formats a value as USD without decimals", () => {
@@ -19,5 +19,12 @@ describe("formatNumber", () => {
 
   it("leaves small numbers unchanged", () => {
     expect(formatNumber(5)).toBe("5");
+  });
+});
+
+describe("formatPercent", () => {
+  it("formats a fraction as a rounded percentage", () => {
+    expect(formatPercent(0.5)).toBe("50%");
+    expect(formatPercent(0.314)).toBe("31%");
   });
 });

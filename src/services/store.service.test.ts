@@ -113,6 +113,10 @@ describe("getOverview", () => {
       { region: "East", totalRevenue: 350 },
       { region: "West", totalRevenue: 200 },
     ]);
+    expect(overview.revenueByCategory).toEqual([
+      { category: "Electronics", totalRevenue: 300 },
+      { category: "Office", totalRevenue: 250 },
+    ]);
   });
 });
 

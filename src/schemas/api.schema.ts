@@ -45,6 +45,12 @@ export const OverviewSchema = z.object({
       totalRevenue: z.number(),
     }),
   ),
+  revenueByCategory: z.array(
+    z.object({
+      category: z.string(),
+      totalRevenue: z.number(),
+    }),
+  ),
 });
 
 export const ApiMetaSchema = z.object({

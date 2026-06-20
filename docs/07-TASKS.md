@@ -598,3 +598,15 @@ Adds a **Revenue by region** bar chart to the dashboard.
 * **Composition:** rendered between the KPI cards and the Stores section; a skeleton shows while the overview loads, and the section is hidden if the overview errors (the KPI area already surfaces the error + retry).
 * **Testing:** the `getOverview` aggregation is covered in `store.service.test.ts`; the Recharts render is not unit-tested (jsdom flakiness — consistent with the project's no-flaky-UI policy).
 * Verification: `type-check`, `lint` (0 warnings), `test` (41) and `build` green; `/api/overview` smoke confirms `revenueByRegion`.
+
+## Iteration 2 — Revenue by category (donut)
+
+**Status:** ✅ Implemented — 2026-06-20 · branch `feat/charts-revenue-by-region`
+
+Adds a **Revenue by category** donut chart beside the region chart in a responsive 2-column "Analytics" row.
+
+* **Server-side metric:** `getOverview()` now also returns `revenueByCategory` (revenue aggregated per product category, sorted desc); verified to sum to `totalRevenue` (1,491,571). `OverviewSchema` extended + validated on the client.
+* **Donut:** recharts `PieChart`/`Pie` with theme `--chart-1..5` colors, an accessible legend (color dot + amount + share) and a currency-plus-percentage tooltip. `formatPercent` added to `utils/format.ts`.
+* **Accessibility:** the donut SVG is `role="img"` with an `aria-label` summary; the visible legend exposes the same data as real (non-`img`) text.
+* **Layout:** the previous single-chart section became an "Analytics" 2-column grid (region | category), stacking on mobile, with two skeletons while loading.
+* **Testing:** `getOverview`'s `revenueByCategory` and `formatPercent` are covered → **42 tests**. Verification: gates green; `/api/overview` smoke confirms `revenueByCategory` sums to `totalRevenue`.
