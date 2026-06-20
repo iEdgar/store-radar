@@ -1,0 +1,62 @@
+[
+  {
+    "id": "store_001",
+    "name": "Downtown Store",
+    "city": "New York",
+    "region": "East"
+  },
+  {
+    "id": "store_002",
+    "name": "Harbor Outlet",
+    "city": "Boston",
+    "region": "East"
+  },
+  {
+    "id": "store_003",
+    "name": "Lakeside Market",
+    "city": "Chicago",
+    "region": "North"
+  },
+  {
+    "id": "store_004",
+    "name": "Summit Retail",
+    "city": "Denver",
+    "region": "West"
+  },
+  {
+    "id": "store_005",
+    "name": "Bayview Shop",
+    "city": "San Francisco",
+    "region": "West"
+  },
+  {
+    "id": "store_006",
+    "name": "Sunset Plaza",
+    "city": "Los Angeles",
+    "region": "West"
+  },
+  {
+    "id": "store_007",
+    "name": "Riverside Store",
+    "city": "Austin",
+    "region": "South"
+  },
+  {
+    "id": "store_008",
+    "name": "Galleria Point",
+    "city": "Miami",
+    "region": "South"
+  },
+  {
+    "id": "store_009",
+    "name": "Northgate Mall",
+    "city": "Seattle",
+    "region": "North"
+  },
+  {
+    "id": "store_010",
+    "name": "Pioneer Square",
+    "city": "Portland",
+    "region": "North"
+  }
+]

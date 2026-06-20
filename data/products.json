@@ -1,0 +1,146 @@
+[
+  {
+    "id": "product_001",
+    "sku": "SKU-1001",
+    "name": "Wireless Mouse",
+    "category": "Electronics"
+  },
+  {
+    "id": "product_002",
+    "sku": "SKU-1002",
+    "name": "Mechanical Keyboard",
+    "category": "Electronics"
+  },
+  {
+    "id": "product_003",
+    "sku": "SKU-1003",
+    "name": "USB-C Hub",
+    "category": "Electronics"
+  },
+  {
+    "id": "product_004",
+    "sku": "SKU-1004",
+    "name": "Noise-Cancelling Headphones",
+    "category": "Electronics"
+  },
+  {
+    "id": "product_005",
+    "sku": "SKU-1005",
+    "name": "4K Monitor",
+    "category": "Electronics"
+  },
+  {
+    "id": "product_006",
+    "sku": "SKU-1006",
+    "name": "Webcam HD",
+    "category": "Electronics"
+  },
+  {
+    "id": "product_007",
+    "sku": "SKU-1007",
+    "name": "Bluetooth Speaker",
+    "category": "Electronics"
+  },
+  {
+    "id": "product_008",
+    "sku": "SKU-1008",
+    "name": "Laptop Stand",
+    "category": "Electronics"
+  },
+  {
+    "id": "product_009",
+    "sku": "SKU-1009",
+    "name": "LED Desk Lamp",
+    "category": "Home"
+  },
+  {
+    "id": "product_010",
+    "sku": "SKU-1010",
+    "name": "Air Purifier",
+    "category": "Home"
+  },
+  {
+    "id": "product_011",
+    "sku": "SKU-1011",
+    "name": "Coffee Maker",
+    "category": "Home"
+  },
+  {
+    "id": "product_012",
+    "sku": "SKU-1012",
+    "name": "Ceramic Mug Set",
+    "category": "Home"
+  },
+  {
+    "id": "product_013",
+    "sku": "SKU-1013",
+    "name": "Throw Blanket",
+    "category": "Home"
+  },
+  {
+    "id": "product_014",
+    "sku": "SKU-1014",
+    "name": "Ergonomic Chair",
+    "category": "Office"
+  },
+  {
+    "id": "product_015",
+    "sku": "SKU-1015",
+    "name": "Standing Desk",
+    "category": "Office"
+  },
+  {
+    "id": "product_016",
+    "sku": "SKU-1016",
+    "name": "Notebook A5",
+    "category": "Office"
+  },
+  {
+    "id": "product_017",
+    "sku": "SKU-1017",
+    "name": "Gel Pen Pack",
+    "category": "Office"
+  },
+  {
+    "id": "product_018",
+    "sku": "SKU-1018",
+    "name": "Document Organizer",
+    "category": "Office"
+  },
+  {
+    "id": "product_019",
+    "sku": "SKU-1019",
+    "name": "Yoga Mat",
+    "category": "Sports"
+  },
+  {
+    "id": "product_020",
+    "sku": "SKU-1020",
+    "name": "Water Bottle",
+    "category": "Sports"
+  },
+  {
+    "id": "product_021",
+    "sku": "SKU-1021",
+    "name": "Resistance Bands",
+    "category": "Sports"
+  },
+  {
+    "id": "product_022",
+    "sku": "SKU-1022",
+    "name": "Running Socks",
+    "category": "Sports"
+  },
+  {
+    "id": "product_023",
+    "sku": "SKU-1023",
+    "name": "Building Blocks Set",
+    "category": "Toys"
+  },
+  {
+    "id": "product_024",
+    "sku": "SKU-1024",
+    "name": "Remote Control Car",
+    "category": "Toys"
+  }
+]

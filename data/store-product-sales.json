@@ -1,0 +1,786 @@
+[
+  {
+    "id": "metric_001",
+    "storeId": "store_001",
+    "productId": "product_006",
+    "unitsSold": 212,
+    "totalRevenue": 12508
+  },
+  {
+    "id": "metric_002",
+    "storeId": "store_001",
+    "productId": "product_007",
+    "unitsSold": 291,
+    "totalRevenue": 22989
+  },
+  {
+    "id": "metric_003",
+    "storeId": "store_001",
+    "productId": "product_009",
+    "unitsSold": 35,
+    "totalRevenue": 1015
+  },
+  {
+    "id": "metric_004",
+    "storeId": "store_001",
+    "productId": "product_011",
+    "unitsSold": 42,
+    "totalRevenue": 4158
+  },
+  {
+    "id": "metric_005",
+    "storeId": "store_001",
+    "productId": "product_016",
+    "unitsSold": 210,
+    "totalRevenue": 1680
+  },
+  {
+    "id": "metric_006",
+    "storeId": "store_001",
+    "productId": "product_019",
+    "unitsSold": 196,
+    "totalRevenue": 5488
+  },
+  {
+    "id": "metric_007",
+    "storeId": "store_001",
+    "productId": "product_020",
+    "unitsSold": 182,
+    "totalRevenue": 2730
+  },
+  {
+    "id": "metric_008",
+    "storeId": "store_001",
+    "productId": "product_023",
+    "unitsSold": 142,
+    "totalRevenue": 5964
+  },
+  {
+    "id": "metric_009",
+    "storeId": "store_002",
+    "productId": "product_001",
+    "unitsSold": 120,
+    "totalRevenue": 3000
+  },
+  {
+    "id": "metric_010",
+    "storeId": "store_002",
+    "productId": "product_003",
+    "unitsSold": 208,
+    "totalRevenue": 9360
+  },
+  {
+    "id": "metric_011",
+    "storeId": "store_002",
+    "productId": "product_004",
+    "unitsSold": 54,
+    "totalRevenue": 10746
+  },
+  {
+    "id": "metric_012",
+    "storeId": "store_002",
+    "productId": "product_005",
+    "unitsSold": 174,
+    "totalRevenue": 60726
+  },
+  {
+    "id": "metric_013",
+    "storeId": "store_002",
+    "productId": "product_008",
+    "unitsSold": 274,
+    "totalRevenue": 10686
+  },
+  {
+    "id": "metric_014",
+    "storeId": "store_002",
+    "productId": "product_010",
+    "unitsSold": 54,
+    "totalRevenue": 8586
+  },
+  {
+    "id": "metric_015",
+    "storeId": "store_002",
+    "productId": "product_011",
+    "unitsSold": 248,
+    "totalRevenue": 24552
+  },
+  {
+    "id": "metric_016",
+    "storeId": "store_002",
+    "productId": "product_013",
+    "unitsSold": 258,
+    "totalRevenue": 8772
+  },
+  {
+    "id": "metric_017",
+    "storeId": "store_002",
+    "productId": "product_014",
+    "unitsSold": 107,
+    "totalRevenue": 26643
+  },
+  {
+    "id": "metric_018",
+    "storeId": "store_002",
+    "productId": "product_015",
+    "unitsSold": 138,
+    "totalRevenue": 55062
+  },
+  {
+    "id": "metric_019",
+    "storeId": "store_002",
+    "productId": "product_016",
+    "unitsSold": 188,
+    "totalRevenue": 1504
+  },
+  {
+    "id": "metric_020",
+    "storeId": "store_002",
+    "productId": "product_019",
+    "unitsSold": 55,
+    "totalRevenue": 1540
+  },
+  {
+    "id": "metric_021",
+    "storeId": "store_002",
+    "productId": "product_021",
+    "unitsSold": 27,
+    "totalRevenue": 594
+  },
+  {
+    "id": "metric_022",
+    "storeId": "store_002",
+    "productId": "product_022",
+    "unitsSold": 28,
+    "totalRevenue": 336
+  },
+  {
+    "id": "metric_023",
+    "storeId": "store_003",
+    "productId": "product_004",
+    "unitsSold": 28,
+    "totalRevenue": 5572
+  },
+  {
+    "id": "metric_024",
+    "storeId": "store_003",
+    "productId": "product_005",
+    "unitsSold": 124,
+    "totalRevenue": 43276
+  },
+  {
+    "id": "metric_025",
+    "storeId": "store_003",
+    "productId": "product_007",
+    "unitsSold": 74,
+    "totalRevenue": 5846
+  },
+  {
+    "id": "metric_026",
+    "storeId": "store_003",
+    "productId": "product_008",
+    "unitsSold": 24,
+    "totalRevenue": 936
+  },
+  {
+    "id": "metric_027",
+    "storeId": "store_003",
+    "productId": "product_015",
+    "unitsSold": 56,
+    "totalRevenue": 22344
+  },
+  {
+    "id": "metric_028",
+    "storeId": "store_003",
+    "productId": "product_016",
+    "unitsSold": 194,
+    "totalRevenue": 1552
+  },
+  {
+    "id": "metric_029",
+    "storeId": "store_003",
+    "productId": "product_017",
+    "unitsSold": 32,
+    "totalRevenue": 192
+  },
+  {
+    "id": "metric_030",
+    "storeId": "store_003",
+    "productId": "product_018",
+    "unitsSold": 93,
+    "totalRevenue": 1767
+  },
+  {
+    "id": "metric_031",
+    "storeId": "store_003",
+    "productId": "product_020",
+    "unitsSold": 240,
+    "totalRevenue": 3600
+  },
+  {
+    "id": "metric_032",
+    "storeId": "store_003",
+    "productId": "product_021",
+    "unitsSold": 144,
+    "totalRevenue": 3168
+  },
+  {
+    "id": "metric_033",
+    "storeId": "store_003",
+    "productId": "product_022",
+    "unitsSold": 133,
+    "totalRevenue": 1596
+  },
+  {
+    "id": "metric_034",
+    "storeId": "store_003",
+    "productId": "product_023",
+    "unitsSold": 125,
+    "totalRevenue": 5250
+  },
+  {
+    "id": "metric_035",
+    "storeId": "store_003",
+    "productId": "product_024",
+    "unitsSold": 86,
+    "totalRevenue": 5504
+  },
+  {
+    "id": "metric_036",
+    "storeId": "store_004",
+    "productId": "product_002",
+    "unitsSold": 217,
+    "totalRevenue": 19313
+  },
+  {
+    "id": "metric_037",
+    "storeId": "store_004",
+    "productId": "product_004",
+    "unitsSold": 40,
+    "totalRevenue": 7960
+  },
+  {
+    "id": "metric_038",
+    "storeId": "store_004",
+    "productId": "product_006",
+    "unitsSold": 94,
+    "totalRevenue": 5546
+  },
+  {
+    "id": "metric_039",
+    "storeId": "store_004",
+    "productId": "product_007",
+    "unitsSold": 156,
+    "totalRevenue": 12324
+  },
+  {
+    "id": "metric_040",
+    "storeId": "store_004",
+    "productId": "product_009",
+    "unitsSold": 120,
+    "totalRevenue": 3480
+  },
+  {
+    "id": "metric_041",
+    "storeId": "store_004",
+    "productId": "product_011",
+    "unitsSold": 52,
+    "totalRevenue": 5148
+  },
+  {
+    "id": "metric_042",
+    "storeId": "store_004",
+    "productId": "product_014",
+    "unitsSold": 98,
+    "totalRevenue": 24402
+  },
+  {
+    "id": "metric_043",
+    "storeId": "store_004",
+    "productId": "product_017",
+    "unitsSold": 210,
+    "totalRevenue": 1260
+  },
+  {
+    "id": "metric_044",
+    "storeId": "store_004",
+    "productId": "product_018",
+    "unitsSold": 91,
+    "totalRevenue": 1729
+  },
+  {
+    "id": "metric_045",
+    "storeId": "store_004",
+    "productId": "product_019",
+    "unitsSold": 150,
+    "totalRevenue": 4200
+  },
+  {
+    "id": "metric_046",
+    "storeId": "store_004",
+    "productId": "product_020",
+    "unitsSold": 78,
+    "totalRevenue": 1170
+  },
+  {
+    "id": "metric_047",
+    "storeId": "store_004",
+    "productId": "product_022",
+    "unitsSold": 195,
+    "totalRevenue": 2340
+  },
+  {
+    "id": "metric_048",
+    "storeId": "store_004",
+    "productId": "product_024",
+    "unitsSold": 145,
+    "totalRevenue": 9280
+  },
+  {
+    "id": "metric_049",
+    "storeId": "store_005",
+    "productId": "product_006",
+    "unitsSold": 125,
+    "totalRevenue": 7375
+  },
+  {
+    "id": "metric_050",
+    "storeId": "store_005",
+    "productId": "product_008",
+    "unitsSold": 237,
+    "totalRevenue": 9243
+  },
+  {
+    "id": "metric_051",
+    "storeId": "store_005",
+    "productId": "product_009",
+    "unitsSold": 114,
+    "totalRevenue": 3306
+  },
+  {
+    "id": "metric_052",
+    "storeId": "store_005",
+    "productId": "product_010",
+    "unitsSold": 288,
+    "totalRevenue": 45792
+  },
+  {
+    "id": "metric_053",
+    "storeId": "store_005",
+    "productId": "product_011",
+    "unitsSold": 184,
+    "totalRevenue": 18216
+  },
+  {
+    "id": "metric_054",
+    "storeId": "store_005",
+    "productId": "product_015",
+    "unitsSold": 191,
+    "totalRevenue": 76209
+  },
+  {
+    "id": "metric_055",
+    "storeId": "store_005",
+    "productId": "product_017",
+    "unitsSold": 164,
+    "totalRevenue": 984
+  },
+  {
+    "id": "metric_056",
+    "storeId": "store_005",
+    "productId": "product_018",
+    "unitsSold": 45,
+    "totalRevenue": 855
+  },
+  {
+    "id": "metric_057",
+    "storeId": "store_005",
+    "productId": "product_020",
+    "unitsSold": 224,
+    "totalRevenue": 3360
+  },
+  {
+    "id": "metric_058",
+    "storeId": "store_005",
+    "productId": "product_021",
+    "unitsSold": 156,
+    "totalRevenue": 3432
+  },
+  {
+    "id": "metric_059",
+    "storeId": "store_005",
+    "productId": "product_023",
+    "unitsSold": 23,
+    "totalRevenue": 966
+  },
+  {
+    "id": "metric_060",
+    "storeId": "store_005",
+    "productId": "product_024",
+    "unitsSold": 265,
+    "totalRevenue": 16960
+  },
+  {
+    "id": "metric_061",
+    "storeId": "store_006",
+    "productId": "product_001",
+    "unitsSold": 33,
+    "totalRevenue": 825
+  },
+  {
+    "id": "metric_062",
+    "storeId": "store_006",
+    "productId": "product_004",
+    "unitsSold": 154,
+    "totalRevenue": 30646
+  },
+  {
+    "id": "metric_063",
+    "storeId": "store_006",
+    "productId": "product_005",
+    "unitsSold": 134,
+    "totalRevenue": 46766
+  },
+  {
+    "id": "metric_064",
+    "storeId": "store_006",
+    "productId": "product_006",
+    "unitsSold": 138,
+    "totalRevenue": 8142
+  },
+  {
+    "id": "metric_065",
+    "storeId": "store_006",
+    "productId": "product_008",
+    "unitsSold": 247,
+    "totalRevenue": 9633
+  },
+  {
+    "id": "metric_066",
+    "storeId": "store_006",
+    "productId": "product_009",
+    "unitsSold": 49,
+    "totalRevenue": 1421
+  },
+  {
+    "id": "metric_067",
+    "storeId": "store_006",
+    "productId": "product_011",
+    "unitsSold": 230,
+    "totalRevenue": 22770
+  },
+  {
+    "id": "metric_068",
+    "storeId": "store_006",
+    "productId": "product_014",
+    "unitsSold": 161,
+    "totalRevenue": 40089
+  },
+  {
+    "id": "metric_069",
+    "storeId": "store_006",
+    "productId": "product_017",
+    "unitsSold": 75,
+    "totalRevenue": 450
+  },
+  {
+    "id": "metric_070",
+    "storeId": "store_006",
+    "productId": "product_019",
+    "unitsSold": 162,
+    "totalRevenue": 4536
+  },
+  {
+    "id": "metric_071",
+    "storeId": "store_006",
+    "productId": "product_024",
+    "unitsSold": 249,
+    "totalRevenue": 15936
+  },
+  {
+    "id": "metric_072",
+    "storeId": "store_007",
+    "productId": "product_004",
+    "unitsSold": 222,
+    "totalRevenue": 44178
+  },
+  {
+    "id": "metric_073",
+    "storeId": "store_007",
+    "productId": "product_005",
+    "unitsSold": 70,
+    "totalRevenue": 24430
+  },
+  {
+    "id": "metric_074",
+    "storeId": "store_007",
+    "productId": "product_007",
+    "unitsSold": 154,
+    "totalRevenue": 12166
+  },
+  {
+    "id": "metric_075",
+    "storeId": "store_007",
+    "productId": "product_008",
+    "unitsSold": 270,
+    "totalRevenue": 10530
+  },
+  {
+    "id": "metric_076",
+    "storeId": "store_007",
+    "productId": "product_009",
+    "unitsSold": 30,
+    "totalRevenue": 870
+  },
+  {
+    "id": "metric_077",
+    "storeId": "store_007",
+    "productId": "product_014",
+    "unitsSold": 188,
+    "totalRevenue": 46812
+  },
+  {
+    "id": "metric_078",
+    "storeId": "store_007",
+    "productId": "product_015",
+    "unitsSold": 296,
+    "totalRevenue": 118104
+  },
+  {
+    "id": "metric_079",
+    "storeId": "store_007",
+    "productId": "product_019",
+    "unitsSold": 277,
+    "totalRevenue": 7756
+  },
+  {
+    "id": "metric_080",
+    "storeId": "store_007",
+    "productId": "product_022",
+    "unitsSold": 207,
+    "totalRevenue": 2484
+  },
+  {
+    "id": "metric_081",
+    "storeId": "store_007",
+    "productId": "product_024",
+    "unitsSold": 168,
+    "totalRevenue": 10752
+  },
+  {
+    "id": "metric_082",
+    "storeId": "store_008",
+    "productId": "product_002",
+    "unitsSold": 130,
+    "totalRevenue": 11570
+  },
+  {
+    "id": "metric_083",
+    "storeId": "store_008",
+    "productId": "product_003",
+    "unitsSold": 267,
+    "totalRevenue": 12015
+  },
+  {
+    "id": "metric_084",
+    "storeId": "store_008",
+    "productId": "product_006",
+    "unitsSold": 173,
+    "totalRevenue": 10207
+  },
+  {
+    "id": "metric_085",
+    "storeId": "store_008",
+    "productId": "product_007",
+    "unitsSold": 120,
+    "totalRevenue": 9480
+  },
+  {
+    "id": "metric_086",
+    "storeId": "store_008",
+    "productId": "product_014",
+    "unitsSold": 93,
+    "totalRevenue": 23157
+  },
+  {
+    "id": "metric_087",
+    "storeId": "store_008",
+    "productId": "product_015",
+    "unitsSold": 46,
+    "totalRevenue": 18354
+  },
+  {
+    "id": "metric_088",
+    "storeId": "store_008",
+    "productId": "product_018",
+    "unitsSold": 80,
+    "totalRevenue": 1520
+  },
+  {
+    "id": "metric_089",
+    "storeId": "store_008",
+    "productId": "product_021",
+    "unitsSold": 112,
+    "totalRevenue": 2464
+  },
+  {
+    "id": "metric_090",
+    "storeId": "store_008",
+    "productId": "product_024",
+    "unitsSold": 59,
+    "totalRevenue": 3776
+  },
+  {
+    "id": "metric_091",
+    "storeId": "store_009",
+    "productId": "product_002",
+    "unitsSold": 38,
+    "totalRevenue": 3382
+  },
+  {
+    "id": "metric_092",
+    "storeId": "store_009",
+    "productId": "product_005",
+    "unitsSold": 183,
+    "totalRevenue": 63867
+  },
+  {
+    "id": "metric_093",
+    "storeId": "store_009",
+    "productId": "product_007",
+    "unitsSold": 193,
+    "totalRevenue": 15247
+  },
+  {
+    "id": "metric_094",
+    "storeId": "store_009",
+    "productId": "product_008",
+    "unitsSold": 252,
+    "totalRevenue": 9828
+  },
+  {
+    "id": "metric_095",
+    "storeId": "store_009",
+    "productId": "product_009",
+    "unitsSold": 157,
+    "totalRevenue": 4553
+  },
+  {
+    "id": "metric_096",
+    "storeId": "store_009",
+    "productId": "product_011",
+    "unitsSold": 186,
+    "totalRevenue": 18414
+  },
+  {
+    "id": "metric_097",
+    "storeId": "store_009",
+    "productId": "product_016",
+    "unitsSold": 146,
+    "totalRevenue": 1168
+  },
+  {
+    "id": "metric_098",
+    "storeId": "store_009",
+    "productId": "product_017",
+    "unitsSold": 229,
+    "totalRevenue": 1374
+  },
+  {
+    "id": "metric_099",
+    "storeId": "store_010",
+    "productId": "product_001",
+    "unitsSold": 227,
+    "totalRevenue": 5675
+  },
+  {
+    "id": "metric_100",
+    "storeId": "store_010",
+    "productId": "product_002",
+    "unitsSold": 100,
+    "totalRevenue": 8900
+  },
+  {
+    "id": "metric_101",
+    "storeId": "store_010",
+    "productId": "product_004",
+    "unitsSold": 213,
+    "totalRevenue": 42387
+  },
+  {
+    "id": "metric_102",
+    "storeId": "store_010",
+    "productId": "product_005",
+    "unitsSold": 103,
+    "totalRevenue": 35947
+  },
+  {
+    "id": "metric_103",
+    "storeId": "store_010",
+    "productId": "product_006",
+    "unitsSold": 220,
+    "totalRevenue": 12980
+  },
+  {
+    "id": "metric_104",
+    "storeId": "store_010",
+    "productId": "product_007",
+    "unitsSold": 44,
+    "totalRevenue": 3476
+  },
+  {
+    "id": "metric_105",
+    "storeId": "store_010",
+    "productId": "product_008",
+    "unitsSold": 212,
+    "totalRevenue": 8268
+  },
+  {
+    "id": "metric_106",
+    "storeId": "store_010",
+    "productId": "product_009",
+    "unitsSold": 64,
+    "totalRevenue": 1856
+  },
+  {
+    "id": "metric_107",
+    "storeId": "store_010",
+    "productId": "product_010",
+    "unitsSold": 42,
+    "totalRevenue": 6678
+  },
+  {
+    "id": "metric_108",
+    "storeId": "store_010",
+    "productId": "product_012",
+    "unitsSold": 187,
+    "totalRevenue": 4488
+  },
+  {
+    "id": "metric_109",
+    "storeId": "store_010",
+    "productId": "product_013",
+    "unitsSold": 30,
+    "totalRevenue": 1020
+  },
+  {
+    "id": "metric_110",
+    "storeId": "store_010",
+    "productId": "product_015",
+    "unitsSold": 54,
+    "totalRevenue": 21546
+  },
+  {
+    "id": "metric_111",
+    "storeId": "store_010",
+    "productId": "product_016",
+    "unitsSold": 217,
+    "totalRevenue": 1736
+  },
+  {
+    "id": "metric_112",
+    "storeId": "store_010",
+    "productId": "product_018",
+    "unitsSold": 150,
+    "totalRevenue": 2850
+  }
+]
