@@ -4,6 +4,8 @@ A modern sales analytics dashboard built with **Next.js**, **React**, **TypeScri
 
 This project was designed as a production-quality frontend application that demonstrates scalable architecture, clean code practices, and modern UI development.
 
+**🔗 Live demo:** [store-radar.vercel.app](https://store-radar.vercel.app)
+
 ---
 
 ## ✨ Features
