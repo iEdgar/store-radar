@@ -610,3 +610,15 @@ Adds a **Revenue by category** donut chart beside the region chart in a responsi
 * **Accessibility:** the donut SVG is `role="img"` with an `aria-label` summary; the visible legend exposes the same data as real (non-`img`) text.
 * **Layout:** the previous single-chart section became an "Analytics" 2-column grid (region | category), stacking on mobile, with two skeletons while loading.
 * **Testing:** `getOverview`'s `revenueByCategory` and `formatPercent` are covered → **42 tests**. Verification: gates green; `/api/overview` smoke confirms `revenueByCategory` sums to `totalRevenue`.
+
+## Iteration 3 — CSV export (store products)
+
+**Status:** ✅ Implemented — 2026-06-20 · branch `feat/csv-export`
+
+Adds an **Export CSV** button to the store-detail products table.
+
+* The PRD listed "report export" as out of v1 scope — deliberate post-delivery enhancement.
+* **Client-side, no new dependencies:** `src/utils/csv.ts` (`toCsv` + `downloadCsv`) builds an RFC-4180-style CSV (CRLF, quoting/escaping) with a **formula-injection guard** for string cells and a UTF-8 BOM for spreadsheet apps; numeric cells are left raw.
+* **Reusable** `ExportCsvButton<T>` (shared) + `productCsvColumns` (feature). It exports the **currently filtered** products (what the search shows), is disabled when there are none, and names the file `‹store-slug›-products.csv`.
+* **Testing:** `toCsv` is covered (header/rows, comma/quote/newline escaping, injection guard, numeric cells) → **46 tests**. `downloadCsv` is not unit-tested (browser DOM/Blob).
+* Verification: `type-check`, `lint` (0 warnings), `test` (46) and `build` green.

@@ -74,7 +74,7 @@ export function StoreDetailView({ storeId }: StoreDetailViewProps) {
 
       <section aria-labelledby="products-section" className="space-y-4">
         <SectionTitle id="products-section" title="Products" />
-        <StoreProductsTable products={products} />
+        <StoreProductsTable products={products} storeName={store.name} />
       </section>
     </div>
   );

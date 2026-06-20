@@ -1,6 +1,7 @@
 import type { ColumnDef } from "@tanstack/react-table";
 
 import { Badge } from "@/components/ui/badge";
+import type { CsvColumn } from "@/utils/csv";
 import { formatCurrency, formatNumber } from "@/utils/format";
 import type { ProductSales } from "@/types/api";
 
@@ -46,6 +47,15 @@ export const storeProductColumns: ColumnDef<ProductSales>[] = [
       </span>
     ),
   },
+];
+
+/** Columns for exporting the products table to CSV (raw values, not JSX). */
+export const productCsvColumns: CsvColumn<ProductSales>[] = [
+  { header: "SKU", value: (product) => product.sku },
+  { header: "Product", value: (product) => product.name },
+  { header: "Category", value: (product) => product.category },
+  { header: "Units Sold", value: (product) => product.unitsSold },
+  { header: "Total Revenue", value: (product) => product.totalRevenue },
 ];
 
 /** Filters products by name or SKU (case-insensitive). Lives in the feature so
